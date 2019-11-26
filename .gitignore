@@ -5,6 +5,5 @@ bower_components/
 node_modules/
 assets/images/
 assets/pdf
-.DS_Store
 tmp
-
+.DS_Store
