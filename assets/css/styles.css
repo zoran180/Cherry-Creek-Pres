@@ -14,7 +14,7 @@
 */
 
 
-/* Typography. Establish 8px vertical grid */
+/* 01. Typography. Establish 8px vertical grid */
 .has-pb-0 h1,
 .has-pb-0 h2,
 .has-pb-0 h3,
@@ -87,7 +87,7 @@ p {
 }
 
 
-/** Envelope Icon Link found on Staff **/
+/** 02. Envelope Icon Link found on Staff **/
 .mr-email-link {
     display: inline-block;
     margin-top: 16px;
@@ -118,6 +118,7 @@ p {
     background-color: #bfbfbf;
 }
 
+/* 03. Space on columns mobile */
 @media screen and (max-width: 980px) {
     .mr-unified-col-space {
         margin-bottom: 16px !important;
@@ -125,12 +126,13 @@ p {
     }
 }
 
+
 .et_pb_team_member .et_pb_module_header {
     padding-bottom: 0;
 }
 
 
-/** Changing Order on Tablets and Mobile Devices **/
+/** 04. Changing Order on Tablets and Mobile Devices **/
 @media screen and (max-width: 980px) {
     .change-order {
         display: -webkit-box;
