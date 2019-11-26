@@ -157,7 +157,7 @@ p {
     }
 }
 
-/** Link in Accordions need another styling **/
+/** Link in Accordions needs another styling instead of default one **/
 .et_pb_accordion a,
 .et_pb_accordion h5 {
     color: #fff;
