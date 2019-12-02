@@ -13,8 +13,7 @@
 .et_pb_column {	border-top: 1px dotted green!important;	border-bottom: 1px dotted green!important; }
 */
 
-
-/* 01. Typography. Establish 8px vertical grid */
+/* Typography. Establish 8px vertical grid */
 .has-pb-0 h1,
 .has-pb-0 h2,
 .has-pb-0 h3,
@@ -87,7 +86,7 @@ p {
 }
 
 
-/** 02. Envelope Icon Link found on Staff **/
+/** Envelope Icon Link found on Staff **/
 .mr-email-link {
     display: inline-block;
     margin-top: 16px;
@@ -118,7 +117,6 @@ p {
     background-color: #bfbfbf;
 }
 
-/* 03. Space on columns mobile */
 @media screen and (max-width: 980px) {
     .mr-unified-col-space {
         margin-bottom: 16px !important;
@@ -126,38 +124,41 @@ p {
     }
 }
 
-
 .et_pb_team_member .et_pb_module_header {
     padding-bottom: 0;
 }
 
 
-/** 04. Changing Order on Tablets and Mobile Devices **/
+/** Changing Order on Tablets and Mobile Devices **/
 @media screen and (max-width: 980px) {
+    .is-reversed-mobile,
     .change-order {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
         flex-direction: column;
+
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
     }
-
+    .is-reversed-mobile > div:first-child,
     .change-order > div:first-child {
         -ms-flex-order: 2;
+
         -webkit-box-ordinal-group: 3;
         order: 2;
     }
-
+    .is-reversed-mobile > div:last-child,
     .change-order > div:last-child {
         -ms-flex-order: 1;
+
         -webkit-box-ordinal-group: 2;
         order: 1;
     }
 }
 
-/** Link in Accordions needs another styling instead of default one **/
+/** Link in Accordions need another styling **/
 .et_pb_accordion a,
 .et_pb_accordion h5 {
     color: #fff;
@@ -181,4 +182,116 @@ h5 {
 
 .has-buttons-side-by-side .et_pb_button_module_wrapper:first-child {
     margin-left: 0;
+}
+
+/* Gravity Forms CSS
+========================================*/
+/* Reset spacing of form
+----------------------------------------*/
+.gform_wrapper {
+  margin: 0;
+}
+/* Make One Column
+----------------------------------------*/
+.subscribe-form, .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+.subscribe-form .gform_body,
+.contact-form .gform_body {
+	padding-right: 0!important;
+	width: 100%!important;
+}
+
+.subscribe-form .gform_body .gform_fields,
+.contact-form .gform_body .gform_fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.subscribe-form .gform_footer,
+.contact-form .gform_footer {
+	width: 100%!important;
+}
+
+/* Make one column in gform_body
+----------------------------------------*/
+.subscribe-form .gform_body .gform_fields .gfield,
+.contact-form .gform_body .gform_fields .gfield {
+	margin-bottom: 16px;
+	margin-left: 0!important;
+	width: 100%!important;
+}
+.subscribe-form .gform_body .gform_fields #field_1_4,
+.subscribe-form	.gform_body .gform_fields #field_2_4,
+.contact-form .gform_body .gform_fields #field_1_4,
+.contact-form .gform_body .gform_fields #field_2_4 {
+	margin-left: 0!important;
+}
+
+/* Reset any margin, padding
+   on inputs and submit buttons
+----------------------------------------*/
+.subscribe-form .gform_body .gform_fields li.gfield .ginput_container,
+.contact-form .gform_body .gform_fields li.gfield .ginput_container {
+  margin: 0;
+  width: 100%!important;
+}
+.subscribe-form .gform_footer,
+.contact-form .gform_footer {
+  margin: 0!important;
+  padding: 0!important;
+}
+.gform_body .gfield_label,
+.gform_body label {
+  display: none!important;
+}
+.subscribe-form span,
+.contact-form span {
+  margin: 0!important;
+  padding: 0!important;
+}
+.subscribe-form input,
+.contact-form input {
+  display: block;
+  margin: 0!important;
+  padding: 16px!important;
+  width: 100%!important;
+  border: 0!important;
+  line-height: 24px!important;
+}
+.subscribe-form button[type="submit"],
+.contact-form button[type="submit"] {
+  padding: 12px 24px!important;
+  font-weight: 700;
+  cursor: pointer!important;
+}
+.subscribe-form button[type="submit"]:hover,
+.contact-form button[type="submit"]:hover {
+  padding: 12px 24px!important;
+}
+/* End Of Gravity Forms */
+
+
+#top-menu ul.sub-menu {
+    width: 360px;
+}
+
+#top-menu ul.sub-menu li a {
+    width: 360px;
 }
